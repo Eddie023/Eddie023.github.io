@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Learning Go | Brain Dumps</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Learning Go" />
+<meta property="og:description" content="Learning Go I have been doing node/react professionally for more than 2 years. Initially, it was great fun to use javascript and it&rsquo;s framework. However, after almost 2 years, I started feeling a little bored. Programming was more about finishing a JIRA ticket than enjoying building new stuffs. So, I wanted to challenge myself by learning a new programming language&ndash; learning Go was something I was craving for some time and finally felt like I should give it a try." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Eddie023.github.io/posts/learning-go/" />
+<meta property="article:published_time" content="2021-05-18T14:53:03+05:45" />
+<meta property="article:modified_time" content="2021-05-18T14:53:03+05:45" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Learning Go"/>
+<meta name="twitter:description" content="Learning Go I have been doing node/react professionally for more than 2 years. Initially, it was great fun to use javascript and it&rsquo;s framework. However, after almost 2 years, I started feeling a little bored. Programming was more about finishing a JIRA ticket than enjoying building new stuffs. So, I wanted to challenge myself by learning a new programming language&ndash; learning Go was something I was craving for some time and finally felt like I should give it a try."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://Eddie023.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://Eddie023.github.io/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/about">About</a></li>
+         
+        <li><a href="/posts">All posts</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://Eddie023.github.io/posts/git-cheatsheets/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://Eddie023.github.io/posts/rosh-gadol/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&text=Learning%20Go">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&is_video=false&description=Learning%20Go">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Learning%20Go&body=Check out this article: https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&name=Learning%20Go&description=Learning%20Go%20I%20have%20been%20doing%20node%2freact%20professionally%20for%20more%20than%202%20years.%20Initially%2c%20it%20was%20great%20fun%20to%20use%20javascript%20and%20it%26rsquo%3bs%20framework.%20However%2c%20after%20almost%202%20years%2c%20I%20started%20feeling%20a%20little%20bored.%20Programming%20was%20more%20about%20finishing%20a%20JIRA%20ticket%20than%20enjoying%20building%20new%20stuffs.%20So%2c%20I%20wanted%20to%20challenge%20myself%20by%20learning%20a%20new%20programming%20language%26ndash%3b%20learning%20Go%20was%20something%20I%20was%20craving%20for%20some%20time%20and%20finally%20felt%20like%20I%20should%20give%20it%20a%20try.">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&t=Learning%20Go">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#learning-go">Learning Go</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Learning Go
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-05-18 14:53:03 &#43;0545 &#43;0545" itemprop="datePublished">2021-05-18</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <h3 id="learning-go">Learning Go</h3>
+<p>I have been doing node/react professionally for more than 2 years. Initially, it was great fun to use javascript and it&rsquo;s framework. However, after almost 2 years, I started feeling a little bored. Programming was more about finishing a JIRA ticket than enjoying building new stuffs. So, I wanted to challenge myself by learning a new programming language&ndash; learning Go was something I was craving for some time and finally felt like I should give it a try.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about">About</a></li>
+         
+          <li><a href="/posts">All posts</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#learning-go">Learning Go</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&text=Learning%20Go">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&is_video=false&description=Learning%20Go">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Learning%20Go&body=Check out this article: https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&title=Learning%20Go">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&name=Learning%20Go&description=Learning%20Go%20I%20have%20been%20doing%20node%2freact%20professionally%20for%20more%20than%202%20years.%20Initially%2c%20it%20was%20great%20fun%20to%20use%20javascript%20and%20it%26rsquo%3bs%20framework.%20However%2c%20after%20almost%202%20years%2c%20I%20started%20feeling%20a%20little%20bored.%20Programming%20was%20more%20about%20finishing%20a%20JIRA%20ticket%20than%20enjoying%20building%20new%20stuffs.%20So%2c%20I%20wanted%20to%20challenge%20myself%20by%20learning%20a%20new%20programming%20language%26ndash%3b%20learning%20Go%20was%20something%20I%20was%20craving%20for%20some%20time%20and%20finally%20felt%20like%20I%20should%20give%20it%20a%20try.">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fEddie023.github.io%2fposts%2flearning-go%2f&t=Learning%20Go">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Brain Dumps 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/about">About</a></li>
+         
+        <li><a href="/posts">All posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+
+
+</html>
