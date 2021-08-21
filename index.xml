@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brain Dumps</title>
+    <link>https://Eddie023.github.io/</link>
+    <description>Recent content on Brain Dumps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Jun 2021 15:23:32 +0545</lastBuildDate><atom:link href="https://Eddie023.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bhari Bisaunu</title>
+      <link>https://Eddie023.github.io/posts/bhari-bisaunu/</link>
+      <pubDate>Wed, 23 Jun 2021 15:23:32 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/bhari-bisaunu/</guid>
+      <description>Bhari Bisaunu Bhari Bisaunu is Nepali term for resting your load. Why would you want to take a rest knowing that you have to pick it up again and keep on going until you reach your destination. Obviously because a short break will give you more energy, reinvigorate you for the rest of the journey. Then why don&amp;rsquo;t we prioritize taking break from work?</description>
+    </item>
+    
+    <item>
+      <title>Automate Ahref File Download</title>
+      <link>https://Eddie023.github.io/posts/automate-ahref-file-download/</link>
+      <pubDate>Fri, 18 Jun 2021 22:12:52 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/automate-ahref-file-download/</guid>
+      <description>Automate  href attribute download from a webpage var list = document.getElementsByClassName(&amp;quot;&amp;lt;enter classname here&amp;gt;&amp;quot;) Change HTMLCollection type to array var array = Array.prototype.slice.call(list) Loop over the map and download files one at a time. Note setTimeOut is added to wait until the file is downloaded. array.map((elm, index) =&amp;gt; { setTimeOut(() =&amp;gt; { elm.click() }) }, 1000 * index) </description>
+    </item>
+    
+    <item>
+      <title>Leadership and Organization Five</title>
+      <link>https://Eddie023.github.io/posts/leadership-and-organization-five/</link>
+      <pubDate>Mon, 14 Jun 2021 15:49:57 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/leadership-and-organization-five/</guid>
+      <description>Leadership and Organization: Section 5 Action Reading Material Leadership is about motivating people to translate their values into action with public narrative. In an association, the most valuable resources are those its constituency can contribute - time, energy, effort - in a word, their commitment.
+Resource Mobilization &amp;amp; Effective Action: Lecture Notes: Commitment should be measured through actions.
+4 C&amp;rsquo;s of Advocacy Connection + Context + Commitment + Catapult
+Power-Interest Grid  Low Interest/Low Power: Monitor Low Interest/High Power: Keep Satisfied High Interest/Low Power: Keep Informed High Interest/High Power: Manage Closely  Evaluation Individual(growth) =&amp;gt; Organization(strengthened) =&amp;gt; Problem(solved)</description>
+    </item>
+    
+    <item>
+      <title>Leadership and Organization Three</title>
+      <link>https://Eddie023.github.io/posts/leadership-and-organization-three/</link>
+      <pubDate>Thu, 10 Jun 2021 13:30:25 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/leadership-and-organization-three/</guid>
+      <description>Leadership and Organization: Section Three Reading Material Notes Public Narrative Public narrative can be used to access the emotional resources needed to respond mindfully by mobilizing hope over fear, empathy over alienation, and self-worth over self-doubt.
+Leader should be able to tell a &amp;ldquo;story of self&amp;rdquo; that can communicate that values that explain why they have been called to lead. Leader should be able to tell a &amp;ldquo;story of us&amp;rdquo; that brings alive values their community shares Lader should be able to tell a &amp;ldquo;story of now&amp;rdquo; of the urgent challenge to those values that requires action.</description>
+    </item>
+    
+    <item>
+      <title>Leadership and Organization Two</title>
+      <link>https://Eddie023.github.io/posts/leadership-and-organization-two/</link>
+      <pubDate>Tue, 08 Jun 2021 17:05:36 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/leadership-and-organization-two/</guid>
+      <description>Leadership and Organization: Section Two People, Power &amp;amp; Change The first question an organizer asks is not &amp;ldquo;what is my issue&amp;rdquo; but &amp;ldquo;who are my people&amp;rdquo;
+ Identify the people who you hope to organize Not necessarily what I agree with. But when I think of leadership, I am biased towards leading a business team that are motivated by entrepreneurial goal and personal incentives. In such case, the problem should be defined first.</description>
+    </item>
+    
+    <item>
+      <title>Leadership and Organization</title>
+      <link>https://Eddie023.github.io/posts/leadership-and-organization-one/</link>
+      <pubDate>Tue, 08 Jun 2021 15:47:33 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/leadership-and-organization-one/</guid>
+      <description>Leadership and Organization: Section 1 Lecture 1: Leading Change Empowerment of a person begins with taking responsibility. Empowerment of a community begins with commitment. Responsibility begins with choosing to act.
+Leadership: Accepting responsibility for enabling others to achieve purpose under conditions of uncertainty. Condition of uncertainty here means knowing what needs to be done and how to perform it well.
+Every great leaders in the face of uncertainty have 3 different factors working to solve it.</description>
+    </item>
+    
+    <item>
+      <title>Map Reduce</title>
+      <link>https://Eddie023.github.io/posts/map-reduce/</link>
+      <pubDate>Thu, 27 May 2021 19:02:36 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/map-reduce/</guid>
+      <description>Paper: MapReduce: Simplified Data Processing on Large Clusters Abstract: Users specify a man function that process a key/value pair to generate a set of intermediate key/value pairs, and a reduce function that merges all intermediate values associated with the same intermediate key. Many real world task are expressed in this model.
+The run time system is responsible for partitioning the input data, scheduling the program&amp;rsquo;s execution across a set of machines, handling machines failures, and managing the required inter-machine communication.</description>
+    </item>
+    
+    <item>
+      <title>Rosh Gadol</title>
+      <link>https://Eddie023.github.io/posts/rosh-gadol/</link>
+      <pubDate>Thu, 20 May 2021 09:19:47 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/rosh-gadol/</guid>
+      <description>Rosh Gadol Rosh Gadol is a Hebrew word for &amp;ldquo;big head&amp;rdquo;, which interestingly is a positive term meaning the a person who is capable of seeing the big picture, of taking responsibility and initiative, of demonstrating leadership and of going beyond the job description to accomplish the goal.
+The Israeli Military use this reference to filter out people who are leaders from subservient. I found this concept interesting and did some more reading in the Internet.</description>
+    </item>
+    
+    <item>
+      <title>Learning Go</title>
+      <link>https://Eddie023.github.io/posts/learning-go/</link>
+      <pubDate>Tue, 18 May 2021 14:53:03 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/learning-go/</guid>
+      <description>Learning Go I have been doing node/react professionally for more than 2 years. Initially, it was great fun to use javascript and it&amp;rsquo;s framework. However, after almost 2 years, I started feeling a little bored. Programming was more about finishing a JIRA ticket than enjoying building new stuffs. So, I wanted to challenge myself by learning a new programming language&amp;ndash; learning Go was something I was craving for some time and finally felt like I should give it a try.</description>
+    </item>
+    
+    <item>
+      <title>Git Cheatsheets</title>
+      <link>https://Eddie023.github.io/posts/git-cheatsheets/</link>
+      <pubDate>Thu, 24 Dec 2020 22:45:48 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/git-cheatsheets/</guid>
+      <description>There are a lot of things in git I really admire but I tend to constantly visit StackOverflow for them. So, this is my git memory &amp;ndash;list.
+Adding current date in the comment git commit -m &amp;quot;quick brown fox `date`&amp;quot; </description>
+    </item>
+    
+    <item>
+      <title>Git Submodule</title>
+      <link>https://Eddie023.github.io/posts/git-submodule/</link>
+      <pubDate>Sun, 20 Dec 2020 01:06:13 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/git-submodule/</guid>
+      <description>Git submodules. Git submodules atlassian link</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://Eddie023.github.io/posts/hello-world/</link>
+      <pubDate>Fri, 18 Dec 2020 23:11:53 +0545</pubDate>
+      
+      <guid>https://Eddie023.github.io/posts/hello-world/</guid>
+      <description>Hello World! I am Manish Chaulagain. This is my first of hopefully many random posts.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://Eddie023.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Eddie023.github.io/about/</guid>
+      <description>About Software Engineer. Musing on software development, finance, investing, the economy and various other things.</description>
+    </item>
+    
+  </channel>
+</rss>
